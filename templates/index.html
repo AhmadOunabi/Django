@@ -10,7 +10,15 @@
 <body>
 
     <h1>Hello this is index.html</h1>
-    {{insert_me}}
+    {% if topics %}
+    <ol>
+        {% for tpc in topics %}
+            <li>this is:</li>
+            <p>{{tpc.top_name}}</p>
+        {% endfor %}
+    </ol>
+
+    {% endif %}
 
 </body>
 </html>
